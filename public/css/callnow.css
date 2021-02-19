@@ -1,0 +1,18 @@
+@media screen and (max-width: 1920px) {
+    .call-now-button { display: none; background: var(--main-color); }
+    .quick-call-button { display: block !important; }
+    }
+    @media screen and (max-width: 1024px) {
+    .call-now-button .call-text { display: none !important; }
+    }
+   @media (max-width: 771px)
+   {
+       .call-now-button {
+           display: flex !important;
+       }
+   }
+    .call-now-button { top: 80%; }
+    .call-now-button { left: 3%; }
+    .call-now-button { background: var(--main-color); }
+    .quick-alo-ph-btn-icon { background-color: #ffffff !important; }
+    .call-now-button .call-text { color: #fff; }

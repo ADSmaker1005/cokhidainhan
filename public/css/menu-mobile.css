@@ -1,0 +1,154 @@
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    display: none;
+}
+
+.nav__mobile__button__icon {
+    background-color: white;
+    color: var(--second-color);
+    font-size: 30px;
+    border-radius: 10%;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.nav__mobile__button__icon:hover {
+    opacity: 1;
+    background-color: var(--main-color);
+}
+
+.nav__mobile__button__open {
+    position: fixed;
+    left: 3%;
+    top: 5%;
+    display: block;
+    padding: 0 1%;
+    z-index: 1014;
+    cursor: pointer;
+}
+
+.nav__mobile__button__close {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav__mobile__container {
+    width: 300px;
+    height: 100%;
+    background-color: #5A3A42;
+    position: fixed;
+    left: -300px;
+    transition: 0.4s;
+}
+
+#nav__mobile__button__checkbox {
+    display: none;
+}
+
+#nav__mobile__button__checkbox:checked~nav {
+    left: 0;
+}
+
+#nav__mobile__button__checkbox:checked~#nav__mobile__button__open {
+    display: none;
+}
+
+.nav__mobile__item {
+    text-align: right;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.nav__mobile__item__menu {
+    display: flex;
+    clear: both;
+    text-align: center;
+    padding: 5%;
+    color: white;
+    border-bottom: 1px solid white;
+    margin-top: 1%;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+.nav__mobile__item__menu:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.nav__mobile__item__menu i {
+    line-height: 22px;
+    margin-left: 6%;
+}
+.nav__mobile__item__menu--sub a{
+    color: white;
+    display: block;
+    transition: 0.4s;
+}
+.nav__mobile__item__menu--sub li{
+    color: white;
+    text-align: left;
+}
+.nav__mobile__item__menu--sub a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-align: left;
+}
+.nav__mobile__logo {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 5%;
+}
+
+.nav__mobile__logo img {
+    width: 100%;
+}
+.nav__mobile__item--logo{
+    display: block;
+    padding-bottom: 2%;
+}
+.nav__mobile__item--logo img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.nav__mobile__searchbar{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-left: 5%;
+}
+.nav__mobile__item__menu span{
+    margin-left: 6%;
+}
+.header__topbar--mobilecall{
+    display: none;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 1%;
+}
+.header__topbar--mobilecall span{
+    display: block;
+    width: 80%;
+    margin-left: 20%;
+}
+.header__topbar--mobilecall a{
+    color: white;
+    margin-left: 3%;
+}
+.nav__mobile__item__menu--sub{
+    padding-top: 5%;
+    text-align: left;
+    padding-left: 50px;
+}
