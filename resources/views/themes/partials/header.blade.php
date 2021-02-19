@@ -1,7 +1,7 @@
 <div class=header>
     <div class="ml-3 mr-3">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-4">
                 <a href="/" class="header__logo">
                     <img class="block w-100 h-100" src="{{ $themes->logo }}">
                 </a>
