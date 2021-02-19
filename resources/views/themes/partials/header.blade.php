@@ -1,12 +1,12 @@
 <div class=header>
     <div class="ml-3 mr-3">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <a href="/" class="header__logo">
                     <img class="block w-100 h-100" src="{{ $themes->logo }}">
                 </a>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <ul class="header__nav">
                     @foreach ($Menucategories->sortBy('sort_id') as $index => $category)
                         <li class="header__nav__item">
