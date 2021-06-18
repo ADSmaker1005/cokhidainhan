@@ -26,18 +26,14 @@
                         <img style="width: 100px" class="block" src="{{  $post->img }}">
                     </td>
                     <td>
-                        <form action="{{ route('admin.posts.update',$post->id) }}" method="POST">
-                            @csrf
-                            @method('PUT')
-                            <select class="formcontrol" onchange="this.form.submit()" name="locate">
-                                <option value="0" {{ ($post->locate == '0') ? 'selected' : '' }}>
-                                    Chọn
-                                </option>
-                                <option value="1" {{ ($post->locate == '1') ? 'selected' : '' }}>
-                                    Trang chủ
-                                </option>
-                            </select>
-                        </form>
+                        <select class="formcontrol" class="form-control" disabled onchange="this.form.submit()" name="locate">
+                            <option value="0" {{ ($post->locate == '0') ? 'selected' : '' }}>
+                                Chọn
+                            </option>
+                            <option value="1" {{ ($post->locate == '1') ? 'selected' : '' }}>
+                                Video
+                            </option>
+                        </select>
                     </td>
                     <td>
                         <ul>

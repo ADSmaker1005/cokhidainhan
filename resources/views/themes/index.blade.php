@@ -42,7 +42,7 @@
     <section class="">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-md-3 slug__categories">
+                {{-- <div class="col-md-3 slug__categories">
                     <h2>Danh mục</h2>
                     @foreach ($categories->where('type',1) as $category)
                         @foreach ($category->childs->sortBy('sort_id') as $category)
@@ -51,8 +51,8 @@
                             </a>
                         @endforeach
                     @endforeach
-                </div>
-                <div class="col-md-9">
+                </div> --}}
+                <div class="col-md-12">
                     <h3 class="service__header">
                         {{ $themes->aboutheader }}
                     </h3>
@@ -116,6 +116,33 @@
                 </div>
             @endforeach
         @endforeach
+        </div>
+    </section>
+    <section>
+        <div class="container mb-2">
+            <div class="index__product--header">
+                <a href="#">Video nổi bật</a>
+            </div>
+            <div class="row">
+                @foreach ($categories->where("type","0") as $category)
+                    @foreach ($category->posts->where("locate","1") as $item)
+                        <div class="col-sm-12 col-md-4 mb-3">
+                            <a href="{{ url($category->slug.'/'.$item->slug) }}" class="index__product--item">
+                                <div class="index__product--item__img" style="height: 200px">
+                                    {!! $item->content !!}
+                                </div>
+                                <div class="index__product--item__header">
+                                    {{  $item->name }}
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                @endforeach
+                
+            </div>
+            <div class="index__product__btn">
+                <a href="{{ url($category->slug.'?type='.$category->type.'&locate='.$category->locate) }}">Xem tất cả</a>
+            </div>
         </div>
     </section>
     {{-- <section class="about mt-2">

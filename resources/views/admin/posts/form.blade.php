@@ -41,7 +41,7 @@
                             <label>Vị trí</label>
                             <select class="form-control" name="locate" id="locate">
                                 <option value="0">---Chọn---</option>
-                                <option value="1" {{ isset($posts) ? ($posts->locate =='1' ? 'selected' : '') : '' }}>Tin tức</option>
+                                <option value="1" {{ isset($posts) ? ($posts->locate =='1' ? 'selected' : '') : '' }}>Video</option>
                             </select>
                         </div>
                     </div>
